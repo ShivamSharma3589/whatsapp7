@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WhatsApp-Container</title>
+</head>
+
+<body>
+    <!-- this is a preloader  -->
+    <div id="preloader">
+        <i class="fa fa-whatsapp"></i>
+        <div id="preloader-text">
+            <div id="from">from</div>
+            <div id="fb">FACEBOOK</div>
+        </div>
+    </div>
+
+    <!-- header  -->
+    <header>
+        <div>
+            <div class="ws-heading">WhatsApp</div>
+            <div id="ws-icons">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-ellipsis-v"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar goes here  -->
+    <nav id="navBar">
+        <div class="navItems"><i class="fa fa-camera"></i></div>
+        <div class="navItems">CHATS</div>
+        <div class="navItems">STATUS</div>
+        <div class="navItems">CALLS</div>
+    </nav>
+    <!-- main section starts here  -->
+    <article>
+
+        <!-- camera section goes here  -->
+        <section id="camera-container">
+
+        </section>
+
+        <!-- chat section goes here  -->
+        <section id="chats-container">
+            <!-- <div class="chat">
+                <div class="chat-image">
+                    <img class="DP" src="chat-images/pandat.jpg">
+                </div>
+                <div class="chat-text">
+                    <div class="chat-name text-wrap">Shivam Sharma </div>
+                    <div class="chat-message text-wrap">Hello Brother!</div>
+                </div>
+                <div class="chat-time">6:03 PM</div>
+            </div> -->
+
+            <!-- chat image viewer starts here  -->
+            <div id="chat-image-viewer">
+            </div>
+            <!-- image viewer container  -->
+            <div id="chat-image-viewer-box">
+                <div id="chat-name">Shivam Sharma</div>
+                <img id="small-image" src="chat-images/pandat.jpg">
+                <div id="image-icons">
+                    <i class="fas fa-comment-alt-lines"></i>
+                    <i class="fas fa-phone-alt reverse"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fal fa-info-circle"></i>
+                </div>
+            </div>
+
+            <!-- to open image full screen view  -->
+            <div id="full-display-image">
+                <div id="full-display-header">
+                    <div id="full-display-close">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div id="full-display-name">Shivam Sharma</div>
+                </div>
+                <img id="full-size-image" src="chat-images/pandat.jpg">
+            </div>
+
+            <!-- chating container starts here  -->
+            <div id="chating-container">
+
+                <!-- header for chating container  -->
+                <div id="chating-container-header">
+                    <div>
+                        <i id="chating-close" class="fa-solid fa-arrow-left"></i>
+                        <img id="chating-image" src="chat-images/pandat.jpg">
+                        <div id="chating-name">Shivam</div>
+                    </div>
+                    <div>
+                        <i class="fas fa-video"></i>
+                        <i class="fas fa-phone-alt reverse"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <div id="messages-container">
+                    <div class="sender">hii shivam sharma <sub>8:09PM</sub></div>
+                </div>
+
+                <!-- input/message box goes here  -->
+                <div id="chating-input-container">
+                    <input id="message" type="text" placeholder="Type a message">
+                    <button id="send">
+                        <i class="fa-solid fa-paper-plane-top"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- status container starts here  -->
+        <section id="status-container">
+            <!-- <div class="status">
+                <div class="status-image">
+                    <img src="chat-images/pandat.jpg">
+                </div>
+                <div class="status-text">
+                    <div class="status-name text-wrap">Shivam Sharma</div>
+                    <div class="status-time">yesterday</div>
+                </div>
+                <div id="status-option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div id="recent-updates">Recent updates</div>
+            <div class="status">
+                <div class="status-image">
+                    <img src="chat-images/pandat.jpg">
+                </div>
+                <div class="status-text">
+                    <div class="status-name text-wrap">Shivam Sharma</div>
+                    <div class="status-time">yesterday</div>
+                </div>
+            </div> -->
+            <div id="status-display-container">
+
+                <!-- header in display status section  -->
+                <div id="status-display-container-header">
+
+                    <!-- video length scale goes here  -->
+                    <div id="scale">
+                        <div id="fill"></div>
+                    </div>
+
+                    <!-- image and other icons in status section  -->
+                    <div id="status-header-icons">
+                        <i id="status-container-close" class="fa-solid fa-arrow-left"></i>
+                        <img id="status-container-image" src="chat-images/pandat.jpg">
+                        <div id="status-container-text">
+                            <div id="status-container-name">Shivam</div>
+                            <div id="status-container-time">yesterday</div>
+                        </div>
+                        <i id="status-container-option" class="fa fa-ellipsis-v"></i>
+                    </div>
+
+                </div>
+
+                <!-- video player starts here  -->
+                <video id="status-video" src="status/joseph.mp4"></video>
+            </div>
+        </section>
+
+        <!-- calls section goes here  -->
+        <section class="calls-container">
+
+        </section>
+
+    </article>
+
+</body>
+<script src="main.js"></script>
+
+</html>
